@@ -1,0 +1,9 @@
+DROP TABLE bike_racer;
+
+CREATE TABLE bike_racer (
+  id STRING(36) NOT NULL,
+  name STRING(256),
+  team STRING(256),
+  created_at TIMESTAMP,
+  updated_at TIMESTAMP
+) PRIMARY KEY(id, created_at DESC);

@@ -1,0 +1,9 @@
+DROP TABLE `personal-223023.test_database.bike_racer`;
+
+CREATE TABLE `personal-223023.test_database.bike_racer`(
+  id STRING NOT NULL,
+  name STRING,
+  team STRING,
+  created_at TIMESTAMP,
+  updated_at TIMESTAMP
+) PARTITION BY DATE(created_at);
